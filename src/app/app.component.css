@@ -1,1 +1,8 @@
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.titlebar{
+    text-align: center;
+}
+
+.filler{
+    flex: 1 1 auto;
+}
