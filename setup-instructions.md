@@ -1,6 +1,10 @@
 # Install npm and node
 1. sudo apt install npm
 2. sudo apt install nodejs-legacy
+## Update node version
+1. sudo npm install n -g
+2. sudo n 0.12.2
+3. sudo n stable
 
 # Clone homepage directory to an appropriate directory
 1. git clone https://github.com/tanmaywadhwa/homepage.git
