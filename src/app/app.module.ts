@@ -4,10 +4,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatButtonModule, MatCardModule, MatTabsModule } from '@angular/material';
 import 'hammerjs';
 import { AppComponent } from './app.component';
+import {PrimeCard} from './shared/prime_card';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PrimeCard
   ],
   imports: [
     BrowserModule,
