@@ -1,8 +1,24 @@
 
 .titlebar{
     text-align: center;
+    padding: 5px 25px;
 }
 
 .filler{
     flex: 1 1 auto;
+}
+
+.icon{
+    height: 16px;
+    margin-top: 5px;
+}
+
+.banner{
+    /* background-image: url("assets/university-at-buffalo1.jpg"); */
+    background-image: url("../assets/me.jpg");
+    background-repeat: no-repeat;
+    background-position: 0in;
+    background-size: 100%;
+    background-attachment: scroll;
+    min-height: 200px;
 }

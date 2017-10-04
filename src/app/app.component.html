@@ -1,7 +1,37 @@
 <!--The content below is only a placeholder and can be replaced.-->
   <mat-toolbar class="titlebar" color="primary">
-    <span>{{heading}}</span>
+    <button mat-button>
+      <span>
+        Tanmay Wadhwa
+      </span>
+    </button>
     <span class="filler"></span>
-    <button mat-raised-button color="accent">Download Resume</button>
+    <a href="http://www.github.com/tanmaywadhwa">
+    <button mat-raised-button color="primary">
+      <span>
+        <img class="icon" src="assets/github-circle-white-transparent.svg">
+        Github
+      </span>
+    </button>
+    </a>
   </mat-toolbar>
+  <mat-card class="banner"></mat-card>
+  <br>
+  <mat-tab-group mat-stretch-tabs>
+      <mat-tab  label="Blog" >
+        <mat-card>
+            <h2>Blog posts go here</h2>
+            <p>...</p>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="About Me">
+          <mat-card>
+              <h2>Resume goes here</h2>
+              <p>...</p>
+              <p>...</p>
+              <p>...</p>
+              <p>...</p>
+          </mat-card>
+      </mat-tab>
+    </mat-tab-group>
 
