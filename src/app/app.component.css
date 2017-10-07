@@ -1,7 +1,6 @@
 
 .titlebar{
     text-align: center;
-    padding: 5px 25px;
 }
 
 .filler{
@@ -21,4 +20,8 @@
     background-size: 100%;
     background-attachment: scroll;
     min-height: 200px;
+}
+
+.button-img{
+    padding: 10px 0 0 0;
 }

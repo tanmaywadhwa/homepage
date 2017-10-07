@@ -5,11 +5,13 @@ import { MatToolbarModule, MatButtonModule, MatCardModule, MatTabsModule } from 
 import 'hammerjs';
 import { AppComponent } from './app.component';
 import {PrimeCard} from './shared/prime_card';
+import {BodyComponent} from './body/body_component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrimeCard
+    PrimeCard,
+    BodyComponent
   ],
   imports: [
     BrowserModule,

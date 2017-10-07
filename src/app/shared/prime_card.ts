@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./prime_card.css']
 })
 export class PrimeCard {
+  heading: string;
+  constructor(){
+    this.heading = "Heading";
+  }
   
 }
