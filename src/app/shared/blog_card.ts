@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'prime-card',
-  templateUrl: './prime_card.html',
-  styleUrls: ['./prime_card.css']
+  selector: 'blog-card',
+  templateUrl: './blog_card.html',
+  styleUrls: ['./blog_card.css']
 })
-export class PrimeCard {
+export class BlogCard {
   heading: string;
   constructor(){
     this.heading = "Heading";
