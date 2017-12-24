@@ -10,7 +10,7 @@
 1. git clone https://github.com/tanmaywadhwa/homepage.git
 
 # Initialize angular CLI and run the dev server.
-1. npm install -g @angular/cli --ensure
+1. sudo npm install -g @angular/cli --ensure
 2. cd $dev-directory/homepage
 3. npm install
 4. ng serve --open
