@@ -4,14 +4,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatButtonModule, MatCardModule, MatTabsModule } from '@angular/material';
 import 'hammerjs';
 import { AppComponent } from './app.component';
-import {BlogCard} from './shared/blog_card';
-import {BodyComponent} from './body/body_component';
+import { BlogCard } from './shared/blog_card/blog_card';
+import { BodyComponent } from './body/body_component';
+import { PublicationCard } from './shared/publication_card/publication_card';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogCard,
-    BodyComponent
+    BodyComponent,
+    PublicationCard
   ],
   imports: [
     BrowserModule,

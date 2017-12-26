@@ -5,12 +5,20 @@
     text-align: center;
 }
 
+.button_text{
+    color:white;
+    size:70px;
+}
 .filler{
     flex: 1 1 auto;
 }
 
 .icon{
     height: 16px;
+}
+
+.header-icon{
+    height: 40px;
 }
 
 .banner{
