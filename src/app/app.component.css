@@ -3,12 +3,21 @@
 }
 .titlebar{
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    min-width: fit-content;
 }
 
 .button_text{
     color:white;
-    size:70px;
 }
+
+.header_text{
+    font-size: 30px;
+}
+
 .filler{
     flex: 1 1 auto;
 }

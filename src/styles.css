@@ -6,8 +6,8 @@ body {
     font-family: Roboto, Arial, sans-serif;
     background-color: #F2F2F2;
     min-width:fit-content;
-    /* max-width:1500px; */
     margin:0;
+    overflow-y: scroll;
 }
 
 .mat-button{
