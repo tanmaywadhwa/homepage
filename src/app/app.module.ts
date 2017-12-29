@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { BlogCard } from './shared/blog_card/blog_card';
 import { BodyComponent } from './body/body_component';
 import { PublicationCard } from './shared/publication_card/publication_card';
+import { HeroDetailComponent } from './shared/hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogCard,
     BodyComponent,
-    PublicationCard
+    PublicationCard,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,

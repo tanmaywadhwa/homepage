@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {PUBLICATIONS} from '../../data/publications';
+import {Publication} from '../models/publication';
 
 @Component({
   selector: 'body-component',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./body_component.css']
 })
 export class BodyComponent {
-  
+  publications: Publication[];
+
+  constructor(){
+    this.publications = PUBLICATIONS;
+  }
 }
