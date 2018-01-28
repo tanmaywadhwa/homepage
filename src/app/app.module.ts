@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BlogCard } from './shared/blog_card/blog_card';
 import { BodyComponent } from './body/body_component';
 import { PublicationCard } from './shared/publication_card/publication_card';
+import { BlogService } from './services/blog.service';
 import { HeroDetailComponent } from './shared/hero-detail/hero-detail.component';
 
 @NgModule({
@@ -20,12 +21,13 @@ import { HeroDetailComponent } from './shared/hero-detail/hero-detail.component'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    BlogService,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
     MatTabsModule,
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

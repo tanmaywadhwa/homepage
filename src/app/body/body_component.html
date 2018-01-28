@@ -3,10 +3,9 @@
 <div>
     <mat-tab-group backgroundColor="primary" mat-stretch-tabs>
         <mat-tab label="Blog" >
-            <blog-card></blog-card>
-            <blog-card></blog-card>
-            <blog-card></blog-card>
-            <blog-card></blog-card>
+            <blog-card *ngFor="let blog of blogs"
+            [blog] = "blog">
+            </blog-card>
         </mat-tab>
         <mat-tab label="Publications">
             <publication-card *ngFor="let publication of publications" 
