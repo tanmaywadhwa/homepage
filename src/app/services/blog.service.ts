@@ -6,4 +6,8 @@ export class BlogService {
 
   constructor() { }
 
+  getBlogs(): Blog[] {
+    return BLOGS;
+  }
+
 }

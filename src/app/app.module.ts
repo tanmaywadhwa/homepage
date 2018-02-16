@@ -21,7 +21,6 @@ import { HeroDetailComponent } from './shared/hero-detail/hero-detail.component'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    BlogService,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
