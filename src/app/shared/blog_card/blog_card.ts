@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { Blog } from '../../models/blog';
 
 @Component({
   selector: 'blog-card',
@@ -6,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog_card.css']
 })
 export class BlogCard {
-  heading: string;
-  constructor(){
-    this.heading = "Heading";
-  }
-  
+  @Input() blog: Blog; 
 }

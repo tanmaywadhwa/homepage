@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { BlogCard } from './shared/blog_card/blog_card';
 import { BodyComponent } from './body/body_component';
 import { PublicationCard } from './shared/publication_card/publication_card';
+import { BlogService } from './services/blog.service';
+import { PublicationsService } from './services/publications.service';
+import { HeroDetailComponent } from './shared/hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogCard,
     BodyComponent,
-    PublicationCard
+    PublicationCard,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,9 @@ import { PublicationCard } from './shared/publication_card/publication_card';
     MatCardModule,
     MatTabsModule,
   ],
-  providers: [],
+  providers: [BlogService,
+    PublicationsService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

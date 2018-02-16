@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Publication} from '../../models/publication';
 
 @Component({
   selector: 'publication-card',
@@ -6,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./publication_card.css']
 })
 export class PublicationCard {
-  heading: string;
-  constructor(){
-    this.heading = "Heading";
-  }
-  
+  @Input() publication: Publication;
 }
