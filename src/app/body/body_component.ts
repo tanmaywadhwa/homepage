@@ -4,6 +4,7 @@ import {BLOGS} from '../../data/blogs';
 import {Publication} from '../models/publication';
 import {Blog} from '../models/blog';
 import {BlogService} from '../services/blog.service';
+import {PublicationsService} from '../services/publications.service';
 
 @Component({
   selector: 'body-component',
@@ -14,16 +15,21 @@ export class BodyComponent {
   publications: Publication[];
   blogs: Blog[];
 
-  constructor(private blogService: BlogService){
+  constructor(private blogService: BlogService, private publicationService: PublicationsService){
     // this.blogs = BLOGS;
     // this.publications = PUBLICATIONS;
   }
 
   ngOnInit() {
     this.getBlogs();
+    this.getPublications();
   }
 
   getBlogs(): void {
-    this.blogs = this.blogService.getBlogs(); 
+    this.blogService.getBlogs().subscribe(blogs => this.blogs = blogs);; 
+  }
+  
+  getPublications(): void {
+    this.publicationService.getPublications().subscribe(publications => this.publications = publications);; 
   }
 }
