@@ -15,10 +15,9 @@ export class BodyComponent {
   publications: Publication[];
   blogs: Blog[];
 
-  constructor(private blogService: BlogService, private publicationService: PublicationsService){
-    // this.blogs = BLOGS;
-    // this.publications = PUBLICATIONS;
-  }
+  constructor(
+    private blogService: BlogService, 
+    private publicationService: PublicationsService){}
 
   ngOnInit() {
     this.getBlogs();
