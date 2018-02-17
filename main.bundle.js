@@ -191,18 +191,20 @@ var BodyComponent = /** @class */ (function () {
     function BodyComponent(blogService, publicationService) {
         this.blogService = blogService;
         this.publicationService = publicationService;
-        // this.blogs = BLOGS;
-        // this.publications = PUBLICATIONS;
     }
     BodyComponent.prototype.ngOnInit = function () {
         this.getBlogs();
         this.getPublications();
     };
     BodyComponent.prototype.getBlogs = function () {
-        this.blogs = this.blogService.getBlogs();
+        var _this = this;
+        this.blogService.getBlogs().subscribe(function (blogs) { return _this.blogs = blogs; });
+        ;
     };
     BodyComponent.prototype.getPublications = function () {
-        this.publications = this.publicationService.getPublications();
+        var _this = this;
+        this.publicationService.getPublications().subscribe(function (publications) { return _this.publications = publications; });
+        ;
     };
     BodyComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -210,7 +212,8 @@ var BodyComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/body/body_component.html"),
             styles: [__webpack_require__("../../../../../src/app/body/body_component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_blog_service__["a" /* BlogService */], __WEBPACK_IMPORTED_MODULE_2__services_publications_service__["a" /* PublicationsService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_blog_service__["a" /* BlogService */],
+            __WEBPACK_IMPORTED_MODULE_2__services_publications_service__["a" /* PublicationsService */]])
     ], BodyComponent);
     return BodyComponent;
 }());
@@ -256,6 +259,7 @@ var Publication = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_blogs__ = __webpack_require__("../../../../../src/data/blogs.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -267,11 +271,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var BlogService = /** @class */ (function () {
     function BlogService() {
     }
     BlogService.prototype.getBlogs = function () {
-        return __WEBPACK_IMPORTED_MODULE_1__data_blogs__["a" /* BLOGS */];
+        return Object(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__["a" /* of */])(__WEBPACK_IMPORTED_MODULE_1__data_blogs__["a" /* BLOGS */]);
     };
     BlogService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injectable */])(),
@@ -291,6 +296,7 @@ var BlogService = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicationsService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_publications__ = __webpack_require__("../../../../../src/data/publications.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -302,11 +308,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var PublicationsService = /** @class */ (function () {
     function PublicationsService() {
     }
     PublicationsService.prototype.getPublications = function () {
-        return __WEBPACK_IMPORTED_MODULE_1__data_publications__["a" /* PUBLICATIONS */];
+        return Object(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__["a" /* of */])(__WEBPACK_IMPORTED_MODULE_1__data_publications__["a" /* PUBLICATIONS */]);
     };
     PublicationsService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injectable */])(),
@@ -521,8 +528,8 @@ module.exports = __webpack_require__.p + "me.c19b95b7c4fce0375bba.jpg";
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BLOGS; });
 var BLOGS = [
-    { title: 'First Blog', body: 'asdf;lkjasdf;lkjasdf;lkjasdfl;kjasdf;lkjasdf' },
-    { title: 'Second Blog', body: 'Lorem Ipsum' },
+    { title: 'First', body: 'something goes in here' },
+    { title: 'Second', body: 'Lorem Ipsum' },
 ];
 
 
