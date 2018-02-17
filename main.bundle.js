@@ -150,7 +150,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "div {\n    /* margin:0 4%; */\n    padding:0 23px;\n    max-width: 1000px;\n    min-width: 450px;\n    margin: auto;\n    z-index: 3;\n}", ""]);
+exports.push([module.i, "div {\n    margin:0 4%;\n    /* padding:0 23px; */\n    max-width: 1000px;\n    min-width: 450px;\n    margin: auto;\n}", ""]);
 
 // exports
 
@@ -163,7 +163,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/body/body_component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<div>\n    <mat-tab-group backgroundColor=\"primary\" mat-stretch-tabs>\n        <mat-tab label=\"Blog\" >\n            <blog-card *ngFor=\"let blog of blogs\"\n            [blog] = \"blog\">\n            </blog-card>\n        </mat-tab>\n        <mat-tab label=\"Publications\">\n            <publication-card *ngFor=\"let publication of publications\" \n            [publication] = \"publication\">\n            </publication-card>\n        </mat-tab>\n        <mat-tab label=\"About Me\"></mat-tab>\n    </mat-tab-group>\n</div>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<div>\n    <mat-tab-group  mat-stretch-tabs>\n        <mat-tab label=\"Blog\" >\n            <blog-card *ngFor=\"let blog of blogs\"\n            [blog] = \"blog\">\n            </blog-card>\n        </mat-tab>\n        <mat-tab label=\"Publications\">\n            <publication-card *ngFor=\"let publication of publications\" \n            [publication] = \"publication\">\n            </publication-card>\n        </mat-tab>\n        <mat-tab label=\"About Me\"></mat-tab>\n    </mat-tab-group>\n</div>"
 
 /***/ }),
 
@@ -334,7 +334,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".filler{\n    -webkit-box-flex: 1;\n        -ms-flex: 1 1 auto;\n            flex: 1 1 auto;\n}", ""]);
+exports.push([module.i, ".filler{\n    -webkit-box-flex: 1;\n        -ms-flex: 1 1 auto;\n            flex: 1 1 auto;\n}\n\nmat-card{\n    margin:0 2% 1.5% 2%;\n    border-radius: 8px;\n}\n\nbutton{\n    background-color: #f5f5f5;\n}", ""]);
 
 // exports
 
@@ -347,7 +347,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/shared/blog_card/blog_card.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<br>\n<mat-card>\n    <mat-toolbar>\n        <span>{{blog.title}}</span>\n    </mat-toolbar>\n    <mat-card-content>\n        <p>{{blog.body}}</p>\n    </mat-card-content>\n    <mat-card-actions align=\"end\">\n            <span class=\"filler\"></span>\n            <button mat-raised-button>Read More</button>\n    </mat-card-actions>\n    \n</mat-card>"
+module.exports = "\n<br>\n<mat-card class=\"mat-elevation-z8\">\n    <mat-toolbar>\n        <span>{{blog.title}}</span>\n    </mat-toolbar>\n    <mat-card-content>\n        <p>{{blog.body}}</p>\n    </mat-card-content>\n    <mat-card-actions align=\"end\">\n            <span class=\"filler\"></span>\n            <button mat-raised-button>Read More</button>\n    </mat-card-actions>\n    \n</mat-card>"
 
 /***/ }),
 
@@ -459,7 +459,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".filler{\n    -webkit-box-flex: 1;\n        -ms-flex: 1 1 auto;\n            flex: 1 1 auto;\n}", ""]);
+exports.push([module.i, ".filler{\n    -webkit-box-flex: 1;\n        -ms-flex: 1 1 auto;\n            flex: 1 1 auto;\n}\n\nmat-card{\n    margin:0 2% 1.5% 2%;\n    border-radius: 8px;\n}\n\nbutton{\n    background-color: #f5f5f5;\n}", ""]);
 
 // exports
 
@@ -472,7 +472,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/shared/publication_card/publication_card.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<br>\n<mat-card>\n    <mat-toolbar>\n        <span>{{publication.title}}</span>\n    </mat-toolbar>\n    <mat-card-content>\n        <p>{{publication.body}}</p>\n    </mat-card-content>\n    <mat-card-actions align=\"end\">\n            <span class=\"filler\"></span>\n            <button mat-raised-button>Read More</button>\n    </mat-card-actions>\n    \n</mat-card>"
+module.exports = "\n<br>\n<mat-card class=\"mat-elevation-z8\">\n    <mat-toolbar>\n        <span>{{publication.title}}</span>\n    </mat-toolbar>\n    <mat-card-content>\n        <p>{{publication.body}}</p>\n    </mat-card-content>\n    <mat-card-actions align=\"end\">\n            <span class=\"filler\"></span>\n            <button mat-raised-button>Read More</button>\n    </mat-card-actions>\n    \n</mat-card>"
 
 /***/ }),
 
@@ -528,8 +528,9 @@ module.exports = __webpack_require__.p + "me.c19b95b7c4fce0375bba.jpg";
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BLOGS; });
 var BLOGS = [
-    { title: 'First', body: 'something goes in here' },
-    { title: 'Second', body: 'Lorem Ipsum' },
+    { title: 'Test', body: 'Lorem Ipsum' },
+    { title: 'Test', body: 'Lorem Ipsum' },
+    { title: 'Test', body: 'Lorem Ipsum' },
 ];
 
 
