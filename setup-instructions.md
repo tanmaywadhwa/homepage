@@ -1,25 +1,8 @@
 
-## Install npm and node
-1. Install npm
+## Install npm
 ```bash 
 $ sudo apt install npm
 ```
-2. Install node
-```bash
-$ sudo apt install nodejs-legacy
-```
-
-## Update node version
-```bash
-$ sudo npm install n -g
-```
-```bash
-$ sudo n 0.12.2
-```
-```bash
-$ sudo n stable
-```
-
 ## Change npm's default directory
 1. Make a directory for global installation:
 ```bash
@@ -37,6 +20,10 @@ $ export PATH=~/.npm-global/bin:$PATH
 ```bash
 $ source ~/.profile
 ```
+## Update npm and node versions
+```bash
+$ npm install -g npm
+```
 
 ## Clone homepage directory to an appropriate directory
 ```bash
@@ -45,7 +32,7 @@ $ git clone https://github.com/tanmaywadhwa/homepage.git
 
 ## Initialize angular CLI and run the dev server.
 ```bash 
-$ npm install -g @angular/cli --ensure
+$ npm install -g @angular/cli
 ```
 ```bash 
 $ cd $dev-directory/homepage
